@@ -1,0 +1,8 @@
+#img-bg{
+    background-image: url("https://cdn.pixabay.com/photo/2017/12/29/12/01/laptop-3047409_960_720.jpg");
+
+    min-height: 695px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
