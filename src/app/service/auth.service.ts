@@ -13,11 +13,12 @@ export class AuthService {
     private http: HttpClient
   ) { }
 
-  entrar (userLogin: UserLogin): Observable<UserLogin>{
-    return this.http.post<UserLogin>('https://viniblog.herokuapp.com/swagger-ui/usuarios/logar', userLogin)
+
+  entrar(userLogin:UserLogin):Observable<UserLogin>{
+    return this.http.post<UserLogin>('https://viniblog.herokuapp.com/usuarios/logar', userLogin)
   }
 
-  cadastrar (user: User): Observable<User>{
-    return this.http.post<User>('https://viniblog.herokuapp.com/swagger-ui/usuarios/cadastrar', user)
+  cadastrar(user:User):Observable<User>{
+    return this.http.post<User>('https://viniblog.herokuapp.com/usuarios/cadastrar',user)
   }
 }
