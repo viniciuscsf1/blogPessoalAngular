@@ -36,8 +36,6 @@ entrar(){
   console.log(environment.foto)
   console.log(environment.id)
 
-  
-  
   this.router.navigate(['/inicio'])
   }, erro => {
       if(erro.status ==500){
