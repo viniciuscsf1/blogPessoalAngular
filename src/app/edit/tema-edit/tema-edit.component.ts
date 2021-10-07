@@ -19,7 +19,7 @@ export class TemaEditComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     if(environment.token == ""){
       this.router.navigate(['/entrar'])
     }

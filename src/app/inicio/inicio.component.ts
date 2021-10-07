@@ -33,6 +33,7 @@ export class InicioComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    window.scroll(0,0)
 
     if(environment.token == ""){
       this.router.navigate(['/entrar'])           //comando para mandar o usuário de volta à pagina de login

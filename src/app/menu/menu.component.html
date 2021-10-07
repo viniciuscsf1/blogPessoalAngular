@@ -12,10 +12,10 @@
           <p class="m-0 font-weight-bold text-white fs-16">Olá, {{nome}} </p>
         </li>
         <li class="nav-item pl-3">
-            <a href="">
+            <a [routerLink]="['/user-edit', id]">
                 <p class="text-white fs-16 m-0"><i class="fa fa-edit"></i></p>
             </a>
-        </li>
+          </li>
       </ul>
 
       <ul class="navbar-nav ml-auto d-flex align-items-center">
