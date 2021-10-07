@@ -28,11 +28,11 @@ export class PostagemService {
   }
 
   putPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.get<Postagem>('https://viniblog.herokuapp.com/postagens', this.token)
+    return this.http.put<Postagem>('https://viniblog.herokuapp.com/postagens', postagem, this.token)
   }
 
   deletePostagem(id: number){
-    return this.http.delete<Postagem>(`https://viniblog.herokuapp.com/postagens/${id}`, this.token)
+    return this.http.delete(`https://viniblog.herokuapp.com/postagens/${id}`, this.token)
   }
 
 }
