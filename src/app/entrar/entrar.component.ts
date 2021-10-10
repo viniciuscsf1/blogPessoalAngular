@@ -31,6 +31,7 @@ entrar(){
   environment.nome = this.userLogin.nome
   environment.foto = this.userLogin.foto
   environment.id = this.userLogin.id
+  environment.tipo = this.userLogin.tipo
 
   //aqui é apenas pra conferir se o que foi pego em user login esta no environment
   console.log(environment.token)
