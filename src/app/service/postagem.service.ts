@@ -27,6 +27,10 @@ export class PostagemService {
     return this.http.get<Postagem>(`https://viniblog.herokuapp.com/postagens/${id}`, this.token)
   }
 
+  getByTituloPostagem(titulo: string): Observable<Postagem[]>{
+    return this.http.get<Postagem[]>(`https://viniblog.herokuapp.com/postagens/titulo/${titulo}`, this.token)
+  }
+
   putPostagem(postagem: Postagem): Observable<Postagem>{
     return this.http.put<Postagem>('https://viniblog.herokuapp.com/postagens', postagem, this.token)
   }
