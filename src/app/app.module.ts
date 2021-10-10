@@ -19,6 +19,7 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { AlertasComponent } from './alertas/alertas.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 
 
@@ -43,7 +44,8 @@ import { AlertasComponent } from './alertas/alertas.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ModalModule.forRoot()     //para q ele seja acessado em todo o projeto e o @input funcione direito
+    ModalModule.forRoot(),     //para q ele seja acessado em todo o projeto e o @input funcione direito
+    OrderModule
   ],
   providers: [{  
     //Para o angular não se perder nas rotas (não apontar erro 404) e para proporcionar a ancoragem (href)
